@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:shimmer="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmer_view_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        shimmer:duration="800">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/image_view"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            fresco:placeholderImage="@mipmap/ic_launcher" />
+    </com.facebook.shimmer.ShimmerFrameLayout>
+</android.support.constraint.ConstraintLayout>
